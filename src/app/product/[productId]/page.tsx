@@ -33,6 +33,7 @@ interface CartItem {
 // Fetch product data dynamically from Sanity
 async function getProductData(productId: string): Promise<Product | null> {
   const query = `*[_type == "product" && _id == $productId][0]`;
+  console.log("Fetching product with ID:", productId);
   const product = await client.fetch(query, { productId });
   return product;
 }
@@ -45,8 +46,8 @@ export default function ProductPage() {
   const [cartOpen, setCartOpen] = useState(false);
   const [quantity, setQuantity] = useState(1); // State for quantity
 
-  const routeParams = useParams();
-  const productId = routeParams?.productId as string;
+  const params = useParams();
+  const productId = params?.productId as string;
 
   // Fetch product data
   useEffect(() => {
