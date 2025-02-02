@@ -1,0 +1,11 @@
+﻿📊 Test Case Summary,,,,,,,
+,,,,,,,
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity,Remarks
+TC001,Validate product listing page,Open product page > Verify product details,Products display correctly,Products display correctly,✅ Pass,Low,No issues found
+TC002,Test Pagination Functionality,Click on next/previous page > Verify product updates,Page changes with new products,Products load correctly,✅ Pass,Medium,"Works well, but loading indicator suggested"
+TC003,Check cart functionality,Add product to cart > Verify cart updates,Cart updates with added product,Cart updates as expected,✅ Pass,High,Works fine
+TC004,Ensure responsiveness on mobile,Resize browser window > Check layout,Layout adapts properly,Responsive layout confirmed,✅ Pass,Medium,Mobile layout optimized
+TC005,Verify navigation links,Click on all navigation links,Links navigate correctly,Links work as intended,✅ Pass,Low,No broken links
+TC006,Analyze performance metrics,Run Lighthouse test,Performance score ≥ 90,Performance score: 90,✅ Pass,High,Optimized successfully
+TC007,Check accessibility features,Inspect accessibility elements,Accessibility score ≥ 90,Accessibility score: 84,❌ Fail,Medium,Needs improvement in contrast
+TC008,Evaluate SEO optimization,Run SEO audit,SEO score ≥ 90,SEO score: 100,✅ Pass,Medium,Fully optimized
